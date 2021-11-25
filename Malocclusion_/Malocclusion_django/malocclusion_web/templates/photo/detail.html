@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}
+{{object.text|truncatechars:10}}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-9 panel panel-default">
+        <p><img src="{{object.photo.url}}" style="width:135%;" alt=""></p>
+
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <p>{{object.Description_R|linebreaksbr}}</p>
+            </div>
+<!--            <div class="col-xs-6 col-sm-4">-->
+<!--                <p>{{object.Description_L|linebreaksbr}}</p>-->
+<!--            </div>-->
+
+        </div>
+
+
+
+
+
+        <button type="button" class="btn btn-xs btn-info">
+            {{object.author.username}}
+        </button>
+        <a href="{% url 'deep_learning_model_prediction_app:photo_delete' pk=object.id %}"
+            class="btn btn-outline-danger btn-sm float-right">Delete</a>
+
+        <a href="{% url 'deep_learning_model_prediction_app:photo_update' pk=object.id %}"
+            class="btn btn-outline-success btn-sm float-right">Update</a>
+
+    </div>
+    <div class="col-md-2"></div>
+
+</div>
+{% endblock %}

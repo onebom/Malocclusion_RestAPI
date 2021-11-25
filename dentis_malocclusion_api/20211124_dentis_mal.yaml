@@ -1,0 +1,26 @@
+name: dentis_mal
+channels:
+  - defaults
+dependencies:
+  - opencv
+  - scikit-learn
+  - numpy
+  - seaborn
+  - matplotlib
+  - tensorflow
+  - nodejs
+  - tqdm
+  - conda
+  - scipy
+  - jupyter
+  - markdown
+  - xlrd
+  - jupyterlab
+  - python=3.7
+  - openpyxl
+  - scikit-image
+  - pillow
+  - beautifulsoup4
+  - pandas
+  - djangorestframework
+prefix: /home/dentis/anaconda3/envs/dentis_mal
