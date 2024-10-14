@@ -1,5 +1,4 @@
 
-# Model path
 
 * Malocclusion_inference_RestAPI/Malocclusion/mmmil
 
